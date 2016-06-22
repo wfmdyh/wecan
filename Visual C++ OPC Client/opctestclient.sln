@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opctestclient", "opctestclient.vcxproj", "{E0D2A86F-639E-239C-2CA7-D391445FA9F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Debug|Win32.Build.0 = Debug|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Release|Win32.ActiveCfg = Release|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Release|Win32.Build.0 = Release|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{E0D2A86F-639E-239C-2CA7-D391445FA9F2}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

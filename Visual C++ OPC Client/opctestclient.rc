@@ -1,0 +1,1236 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "ÎÄ¼þ(&F)"
+    BEGIN
+        MENUITEM "ÐÂ½¨(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "´ò¿ª(&O)\tCtrl+O",              ID_FILE_OPEN
+        MENUITEM "±£´æ(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "Áí´æÎª...(&A)",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "×î½ü´ò¿ªµÄÎÄµµ",                     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "ÍË³ö(E&)",                      ID_APP_EXIT
+    END
+    POPUP "¿ªÊ¼(&E)"
+    BEGIN
+        MENUITEM "ÐÂ½¨·þÎñÆ÷Á¬½Ó(&S)",                 ID_EDIT_NEWSERVER
+        MENUITEM "ÐÂ½¨×é(&G)",                     ID_EDIT_NEWGROUP
+        MENUITEM "ÐÂ½¨Ïî(&I)",                     ID_EDIT_NEWITEM
+        MENUITEM SEPARATOR
+        MENUITEM "¼ôÇÐ(&t)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "¸´ÖÆ(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "Õ³Ìù(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "É¾³ý(&D)\tDel",                 ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "ÊôÐÔ(&o)",                      ID_EDIT_PROPERTIES
+    END
+    POPUP "ÊÓÍ¼(&V)"
+    BEGIN
+        MENUITEM "Item¸üÐÂ¼ä¸ô(&U)",                ID_VIEW_UPDATETIMER
+        MENUITEM SEPARATOR
+        MENUITEM "ÇåÀíÏûÏ¢(&C)",                    ID_VIEW_CLEAR
+        MENUITEM "Ö»ÏÔÊ¾´íÎóÐÅÏ¢(&E)",                 ID_VIEW_ERRORONLY
+    END
+    POPUP "¹¤¾ß(&T)"
+    BEGIN
+        POPUP "·þÎñÆ÷(&S)"
+        BEGIN
+            MENUITEM "Á¬½Ó(&n)",                      ID_TOOLS_CONNECT
+            MENUITEM "¶Ï¿ªÁ¬½Ó(&i)",                    ID_TOOLS_DISCONNECT
+            MENUITEM "ÖØÐÂÁ¬½Ó(&R)",                    ID_TOOLS_RECONNECT
+            MENUITEM SEPARATOR
+            MENUITEM "»ñÈ¡´íÎóÐÅÏ¢(&E)",                  ID_TOOLS_GET_ERROR_STRING
+            MENUITEM SEPARATOR
+            MENUITEM "ÏÔÊ¾ËùÓÐ×é(&m)",                   ID_TOOLS_ENUMERATE_GROUPS
+            MENUITEM "¸ù¾ÝÃû×Ö²éÕÒ×é(&B)",                 ID_TOOLS_GET_GROUP_BY_NAME
+        END
+        POPUP "×é(&G)"
+        BEGIN
+            MENUITEM "¿ËÂ¡×é",                         ID_TOOLS_CLONE_GROUP
+            MENUITEM SEPARATOR
+            MENUITEM "µ¼³ö³ÉCSVÎÄ¼þ",                    ID_TOOLS_EXPORT_CSV
+            MENUITEM "µ¼ÈëCSVÎÄ¼þ",                     ID_TOOLS_IMPORT_CSV
+        END
+        POPUP "Ïî(&I)"
+        BEGIN
+            MENUITEM "ÉèÖÃ³É»îÔ¾",                       ID_TOOLS_SET_ACTIVE
+            MENUITEM "ÉèÖÃ³ÉÏÐÖÃ",                       ID_TOOLS_SET_INACTIVE
+            MENUITEM SEPARATOR
+            MENUITEM "Í¬²½µÄ Cache &Read",             ID_TOOLS_SYNC_READ_CACHE
+            MENUITEM "Í¬²½µÄ &Device Read",            ID_TOOLS_SYNC_READ_DEVICE
+            MENUITEM "Í¬²½µÄÐ´Êý¾Ý",                      ID_TOOLS_SYNC_WRITE
+            MENUITEM SEPARATOR
+            MENUITEM "Òì²½µÄ 1.0 Cache Read",          ID_TOOLS_ASYNC10_READ_CACHE
+            MENUITEM "Òì²½µÄ 1.0 Device Read",         ID_TOOLS_ASYNC10_READ_DEVICE
+            MENUITEM "Òì²½µÄ 1.0 Cache Refresh",       ID_TOOLS_ASYNC10_REFRESH_CACHE
+            MENUITEM "Òì²½µÄ 1.0 Device Refresh",      ID_TOOLS_ASYNC10_REFRESH_DEVICE
+            MENUITEM "Òì²½µÄ 1.0 Write...",            ID_TOOLS_ASYNC10_WRITE
+            MENUITEM SEPARATOR
+            MENUITEM "Òì²½µÄ 2.0 Read",                ID_TOOLS_ASYNC20_READ_DEVICE
+            MENUITEM "Òì²½µÄ 2.0 Cache Refresh",       ID_TOOLS_ASYNC20_REFRESH_CACHE
+            MENUITEM "Òì²½µÄ 2.0 Device Refresh",      ID_TOOLS_ASYNC20_REFRESH_DEVICE
+            MENUITEM "Òì²½µÄ 2.0 Write...",            ID_TOOLS_ASYNC20_WRITE
+        END
+    END
+    POPUP "°ïÖú(&H)"
+    BEGIN
+        MENUITEM "¹ØÓÚ±¾Èí¼þ(&A)",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SERVER_GENERAL DIALOGEX 0, 0, 262, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "³£¹æ"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "ÒÑ×¢²áµÄ·þÎñ",IDC_STATIC,15,15,85,11
+    CONTROL         "Tree1",IDC_SERVERLIST,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,26,230,86
+    LTEXT           "&Prog ID:",IDC_STATIC,15,122,31,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PROGID,101,122,144,12,ES_AUTOHSCROLL
+    LTEXT           "Ô¶³Ì»úÆ÷Ãû:",IDC_STATIC,15,138,80,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_MACHINENAME,102,138,144,12,ES_AUTOHSCROLL
+END
+
+IDD_GROUP_GENERAL DIALOGEX 0, 0, 322, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "³£¹æ"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Ãû³Æ£º",IDC_STATIC,12,15,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,89,15,103,12,ES_AUTOHSCROLL
+    LTEXT           "¸üÐÂÆµÂÊ£¨ºÁÃë£©£º",IDC_STATIC,12,34,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_UPDATERATE,89,34,103,12,ES_AUTOHSCROLL
+    LTEXT           "Ê±¼ä²¹³¥ £¨·ÖÖÓ£©£º",IDC_STATIC,12,53,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_TIMEBIAS,89,53,103,12,ES_AUTOHSCROLL
+    LTEXT           "ËÀÇø°Ù·Ö±È£º",IDC_STATIC,12,72,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PERCENTDEADBAND,89,72,103,12,ES_AUTOHSCROLL
+    LTEXT           "ÓïÑÔID£º",IDC_STATIC,12,91,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LANGUAGEID,89,91,103,12,ES_AUTOHSCROLL
+    CONTROL         "±£³Ö»î¶¯",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,207,112,55,12
+    LTEXT           "¸üÐÂÍ¨Öª£º",IDC_STATIC,12,112,66,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_UPDATENOTIFICATION,89,112,104,63,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GROUP_ADDITEMS DIALOGEX 0, 0, 379, 260
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ìí¼ÓÏî"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "ÏîÊôÐÔ",IDC_STATIC,7,7,307,86
+    LTEXT           "´æÈ¡Â·¾¶£º",IDC_STATIC,17,21,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ACCESSPATH,65,21,149,14,ES_AUTOHSCROLL
+    LTEXT           "ÏîID£º",IDC_STATIC,17,41,31,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ITEMID,65,41,149,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Validate Item",IDC_VALIDATEITEM,222,41,17,14,BS_BITMAP | WS_GROUP
+    LTEXT           "Êý¾ÝÀàÐÍ£º",IDC_STATIC,17,61,37,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DATATYPE,65,61,63,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Acti&ve",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,16,77,58,12
+    GROUPBOX        "Browsing",IDC_STATIC,7,98,359,132
+    LTEXT           "&Branch Filter:",IDC_STATIC,15,107,45,8
+    EDITTEXT        IDC_FILTERBRANCH,15,117,50,12,ES_AUTOHSCROLL
+    CONTROL         "Tree1",IDC_BRANCHLIST,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,15,133,159,72
+    LTEXT           "&Leaf Filter:",IDC_STATIC,190,107,38,9
+    EDITTEXT        IDC_FILTERLEAF,190,117,45,12,ES_AUTOHSCROLL
+    LTEXT           "T&ype:",IDC_STATIC,240,107,37,8
+    COMBOBOX        IDC_FILTERTYPE,240,117,62,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "A&ccess:",IDC_STATIC,305,107,50,8
+    COMBOBOX        IDC_FILTERACCESS,305,117,55,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LEAFLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_NOLABELWRAP | LVS_AUTOARRANGE | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,190,133,169,72
+    CONTROL         "Browse &flat address space on selected branch",IDC_BROWSEFLAT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,213,159,8
+    PUSHBUTTON      "&Add Leaves",IDC_ADD_LEAVES,309,210,50,14
+    CONTROL         "Vali&date item before adding it to the list",IDC_AUTOVALIDATE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,244,140,12
+    RTEXT           "Item Count:",IDC_ITEM_COUNT,249,244,115,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Previous Item",IDC_PREVIOUS,256,21,22,16,BS_BITMAP | WS_GROUP
+    PUSHBUTTON      "Next Item",IDC_NEXT,284,21,22,16,BS_BITMAP
+    PUSHBUTTON      "New Item",IDC_NEW,256,40,22,16,BS_BITMAP | WS_GROUP
+    PUSHBUTTON      "Duplicate Item",IDC_DUPLICATE,284,40,22,16,BS_BITMAP | WS_GROUP
+    PUSHBUTTON      "Delete Item",IDC_DELETE,256,60,50,16,BS_BITMAP | WS_GROUP
+    PUSHBUTTON      "OK",IDOK,322,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,322,24,50,14
+END
+
+IDD_SUPPORTED_INTERFACES DIALOG 0, 0, 322, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Interfaces"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_NOLABELWRAP | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,12,15,286,111
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SERVER_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_GROUP_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_GROUP_ADDITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_SUPPORTED_INTERFACES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GROUP_GENERAL DLGINIT
+BEGIN
+    IDC_UPDATENOTIFICATION, 0x403, 23, 0
+0x504f, 0x2043, 0x2e31, 0x2030, 0x4e28, 0x206f, 0x6954, 0x656d, 0x7473, 
+0x6d61, 0x2970, "\000" 
+    IDC_UPDATENOTIFICATION, 0x403, 25, 0
+0x504f, 0x2043, 0x2e31, 0x2030, 0x5728, 0x7469, 0x2068, 0x6954, 0x656d, 
+0x7473, 0x6d61, 0x2970, "\000" 
+    IDC_UPDATENOTIFICATION, 0x403, 8, 0
+0x504f, 0x2043, 0x2e32, 0x0030, 
+    0
+END
+
+IDD_GROUP_ADDITEMS DLGINIT
+BEGIN
+    IDC_DATATYPE, 0x403, 7, 0
+0x614e, 0x6974, 0x6576, "\000" 
+    IDC_DATATYPE, 0x403, 8, 0
+0x6f42, 0x6c6f, 0x6165, 0x006e, 
+    IDC_DATATYPE, 0x403, 5, 0
+0x7942, 0x6574, "\000" 
+    IDC_DATATYPE, 0x403, 11, 0
+0x7942, 0x6574, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_DATATYPE, 0x403, 5, 0
+0x6843, 0x7261, "\000" 
+    IDC_DATATYPE, 0x403, 11, 0
+0x6843, 0x7261, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_DATATYPE, 0x403, 5, 0
+0x6f57, 0x6472, "\000" 
+    IDC_DATATYPE, 0x403, 11, 0
+0x6f57, 0x6472, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_DATATYPE, 0x403, 6, 0
+0x6853, 0x726f, 0x0074, 
+    IDC_DATATYPE, 0x403, 12, 0
+0x6853, 0x726f, 0x2074, 0x7241, 0x6172, 0x0079, 
+    IDC_DATATYPE, 0x403, 6, 0
+0x5744, 0x726f, 0x0064, 
+    IDC_DATATYPE, 0x403, 12, 0
+0x5744, 0x726f, 0x2064, 0x7241, 0x6172, 0x0079, 
+    IDC_DATATYPE, 0x403, 5, 0
+0x6f4c, 0x676e, "\000" 
+    IDC_DATATYPE, 0x403, 11, 0
+0x6f4c, 0x676e, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_DATATYPE, 0x403, 6, 0
+0x6c46, 0x616f, 0x0074, 
+    IDC_DATATYPE, 0x403, 12, 0
+0x6c46, 0x616f, 0x2074, 0x7241, 0x6172, 0x0079, 
+    IDC_DATATYPE, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_DATATYPE, 0x403, 13, 0
+0x6f44, 0x6275, 0x656c, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_DATATYPE, 0x403, 7, 0
+0x7453, 0x6972, 0x676e, "\000" 
+    IDC_FILTERTYPE, 0x403, 7, 0
+0x614e, 0x6974, 0x6576, "\000" 
+    IDC_FILTERTYPE, 0x403, 8, 0
+0x6f42, 0x6c6f, 0x6165, 0x006e, 
+    IDC_FILTERTYPE, 0x403, 5, 0
+0x7942, 0x6574, "\000" 
+    IDC_FILTERTYPE, 0x403, 11, 0
+0x7942, 0x6574, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_FILTERTYPE, 0x403, 5, 0
+0x6843, 0x7261, "\000" 
+    IDC_FILTERTYPE, 0x403, 11, 0
+0x6843, 0x7261, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_FILTERTYPE, 0x403, 5, 0
+0x6f57, 0x6472, "\000" 
+    IDC_FILTERTYPE, 0x403, 11, 0
+0x6f57, 0x6472, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_FILTERTYPE, 0x403, 6, 0
+0x6853, 0x726f, 0x0074, 
+    IDC_FILTERTYPE, 0x403, 12, 0
+0x6853, 0x726f, 0x2074, 0x7241, 0x6172, 0x0079, 
+    IDC_FILTERTYPE, 0x403, 6, 0
+0x5744, 0x726f, 0x0064, 
+    IDC_FILTERTYPE, 0x403, 12, 0
+0x5744, 0x726f, 0x2064, 0x7241, 0x6172, 0x0079, 
+    IDC_FILTERTYPE, 0x403, 5, 0
+0x6f4c, 0x676e, "\000" 
+    IDC_FILTERTYPE, 0x403, 11, 0
+0x6f4c, 0x676e, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_FILTERTYPE, 0x403, 6, 0
+0x6c46, 0x616f, 0x0074, 
+    IDC_FILTERTYPE, 0x403, 12, 0
+0x6c46, 0x616f, 0x2074, 0x7241, 0x6172, 0x0079, 
+    IDC_FILTERTYPE, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_FILTERTYPE, 0x403, 13, 0
+0x6f44, 0x6275, 0x656c, 0x4120, 0x7272, 0x7961, "\000" 
+    IDC_FILTERTYPE, 0x403, 7, 0
+0x7453, 0x6972, 0x676e, "\000" 
+    IDC_FILTERACCESS, 0x403, 4, 0
+0x6e41, 0x0079, 
+    IDC_FILTERACCESS, 0x403, 10, 0
+0x6552, 0x6461, 0x4f20, 0x6c6e, 0x0079, 
+    IDC_FILTERACCESS, 0x403, 11, 0
+0x7257, 0x7469, 0x2065, 0x6e4f, 0x796c, "\000" 
+    IDC_FILTERACCESS, 0x403, 11, 0
+0x6552, 0x6461, 0x572f, 0x6972, 0x6574, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "OPC¿Í»§¶Ë\n\n\nOPC Quick Client Files (*.otc)\n.otc\nOPC Quick Client.Document\nOPC Quick Client Document"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPCCLIENTFILTER     "Project Files (*.otc)|*.otc|All files (*.*)|*.*|"
+    IDS_DEFAULTEXT          "otc"
+    IDS_ITEMCOUNT           "Item Count: %d"
+    IDS_APPENDITEMCOUNT     " [Item Count: %d]"
+    IDS_ABOUT               "About"
+    IDS_TECHSUPPORT         "KEPware, Inc.\r\n81 Bridge Street\r\nYarmouth, Maine 04096\r\n\r\nPhone:\t(207) 846-5881\r\nFax:\t(207) 846-5947\r\nEmail:\tteksuprt@kepware.com\r\nWWW:\thttp://www.opcsource.com"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "OPC¿Í»§¶Ë"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ITEMID              "Ãû³Æ"
+    IDS_VALUE               "Öµ"
+    IDS_TIMESTAMP           "Ê±¼ä´Á"
+    IDS_QUALITY             "Quality"
+    IDS_UPDATE_COUNT        "¸üÐÂ´ÎÊý"
+    IDS_EVENT               "ÊÂ¼þ"
+    IDS_UNKNOWN             "Unknown"
+    IDS_QUALITY_UNCERTAIN   "Uncertain"
+    IDS_QUALITY_GOOD        "Good"
+    IDS_QUALITY_BAD         "Bad"
+    IDS_QUALITY_BAD_CONFIGERROR "Bad (Configuration Error)"
+    IDS_QUALITY_BAD_NOTCONNECTED "Bad (Not Connected)"
+    IDS_QUALITY_BAD_DEVICEFAILURE "Bad (Device Failure)"
+    IDS_QUALITY_BAD_SENSORFAILURE "Bad (Sensor Failure)"
+    IDS_QUALITY_BAD_LASTKNOWNVALUE "Bad (Last Known Value)"
+    IDS_QUALITY_BAD_COMMFAILURE "Bad (Communications Failed)"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_QUALITY_BAD_OUTOFSERVICE "Bad (Out of Service)"
+    IDS_QUALITY_UNCERTAIN_LASTUSEABLEVALUE "Uncertain (Last Useable Value)"
+    IDS_QUALITY_UNCERTAIN_SENSORNOTACCURATE "Uncertain (Sensor Not Accurate)"
+    IDS_QUALITY_UNCERTAIN_EUEXCEEDED "Uncertain (Engineering Units Exceeded)"
+    IDS_QUALITY_UNCERTAIN_SUBNORMAL "Uncertain (Sub-Normal)"
+    IDS_QUALITY_GOOD_LOCALOVERRIDE "Good (Local Override)"
+    IDS_QUALITY_NOVALUE     "No Value"
+    IDS_NONAPPLICABLE       "N/A"
+    IDS_DATE                "ÈÕÆÚ"
+    IDS_TIME                "Ê±¼ä"
+    IDS_GROUP_PROPERTIES    "×éÐÅÏ¢"
+    IDS_INTERFACE           "Interface"
+    IDS_REQUIRED            "Required"
+    IDS_SUPPORTED           "Supported"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SERVER_CONNECT_SUCCESS "³É¹¦Á¬½Óµ½·þÎñ '%s'."
+    IDS_GROUP_ADD_SUCCESS   "Added group '%s' to '%s'."
+    IDS_SERVER_DISCONNECTED "Disconnected from server '%s'."
+    IDS_GROUP_REMOVE_SUCCESS "Removed group '%s' from '%s'."
+    IDS_GROUP_REMOVE_WITH_ITEMS 
+                            "Removing group '%s' without removing valid items."
+    IDS_GROUP_REMOVE_ITEMS  "Removed %d items from group '%s'."
+    IDS_GROUP_ADD_ITEMS     "Added %d items to group '%s'."
+    IDS_SYNC_WRITE_SUCCESS  "Synchronous write succeeded for %d items on group '%s'."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SERVER_CONNECT_FAILURE "Failed to connect to server '%s' (HR = %08X)."
+    IDS_SERVER_UNABLE_TO_GET_CLSID 
+                            "Failed to obtain a valid CLSID for server '%s'. "
+    IDS_SERVER_REQUIRED_IID_UNSUPPORTED 
+                            "Failed to connect to server '%s', required interfaces not supported (HR = %08X)."
+    IDS_GROUP_ADD_FAILURE   "Failed to add group '%s' to '%s' (HR = %08X)."
+    IDS_GROUP_REMOVE_FAILURE 
+                            "Failed to remove group '%s' from '%s' (HR = %08X)."
+    IDS_GROUP_REMOVE_ITEMS_FAILED 
+                            "Failed to remove %d items (out of %d) from group '%s'."
+    IDS_GROUP_ADD_ITEMS_FAILED 
+                            "Failed to add item '%s' to group '%s' (HR -> %08X)."
+    IDS_GROUP_ADD_ITEMS_FAILED_NOCONNECTION 
+                            "Failed to add items to group '%s' (No Connection)."
+    IDS_SERVER_ADD_GROUP_FAILED_NOCONNECTION 
+                            "Failed to add group '%s' to server '%s' (No Connection)."
+    IDS_SYNC_WRITE_FAILED   "Failed on item '%s' synchronous write for group '%s' (HR = %08X). "
+    IDS_GROUP_ADD_ITEMS_FAILED_NOINTERFACE 
+                            "Failed to add items to group '%s' (No Interface)."
+    IDS_ASYNC10_WRITE_FAILED 
+                            "Failed to add item '%s' to an asynchronous 1.0 write transaction for group '%s' (HR = %08X)."
+    IDS_ASYNC10_WRITE_COMPLETE_FAILURE 
+                            "Failed on item '%s'  for asynchronous 1.0 write transaction %08X (HR = %08X)."
+    IDS_CONNECT_TO_DATASINK20_FAILED 
+                            "Failed to connect to 2.0 data access interface for group '%s' on server '%s' (HR = %08X).  Falling back to 1.0 interface."
+    IDS_ASYNC20_WRITE_FAILED 
+                            "Failed to add item '%s' to an asynchronous 2.0 write transaction for group '%s' (HR = %08X)."
+    IDS_ASYNC20_WRITE_COMPLETE_FAILURE 
+                            "Failed on item '%s' for asynchronous 2.0 write transaction %08X (HR = %08X)."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SERVER_PROPERTIES   "·þÎñÆ÷ÐÅÏ¢"
+    IDS_CURRENTVALUE        "Current Value"
+    IDS_WRITEVALUE          "Write Value"
+    IDS_SYNCWRITE           "Synchronous Write"
+    IDS_ASYNC10WRITE        "Asynchronous 1.0 Write"
+    IDS_ASYNC20WRITE        "Asynchronous 2.0 Write"
+    IDS_ID                  "ID"
+    IDS_DESCRIPTION         "Description"
+    IDS_PROGID              "ProgID:\t\t\t%1\r\n"
+    IDS_REMOTEMACHINE       "Remote Machine:\t%1\r\n"
+    IDS_STARTTIME           "Start Time:\t\t%1\r\n"
+    IDS_CURRENTTIME         "Current Time:\t\t%1\r\n"
+    IDS_LASTUPDATETIME      "Last Update Time:\t%1\r\n"
+    IDS_SERVERSTATE         "Server State:\t\t%1\r\n"
+    IDS_GROUPCOUNT          "Group Count:\t\t%1\r\n"
+    IDS_BANDWIDTH           "Bandwidth:\t\t%1\r\n"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_NEWSERVER       "Create a new server connection\nNew Server"
+    ID_EDIT_NEWGROUP        "Create a new group\nNew Group"
+    ID_EDIT_NEWITEM         "Create a new item\nNew Item"
+    ID_EDIT_PROPERTIES      "Show properties for selected object\nProperties"
+    ID_EDIT_DELETE          "Deletes the selection\nDelete"
+    ID_VIEW_UPDATETIMER     "Set the item view refresh rate for displaying data"
+    ID_TOOLS_SYNC_WRITE     "Perform a synchronous write on the selected items"
+    ID_TOOLS_ASYNC10_WRITE  "Perform an asynchronous 1.0 write on the selected items"
+    ID_TOOLS_ASYNC20_WRITE  "Perform an asynchronous 2.0 write on the selected items"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ASYNC10_WRITE_SUCCESS 
+                            "Asynchronous 1.0 write transaction %08X initiated for %d items on group '%s'. "
+    IDS_ASYNC10_WRITE_COMPLETE 
+                            "Asynchronous 1.0 write transaction %08X completed for %d items on group '%s' (HR = %08X)."
+    IDS_ASYNC20_WRITE_SUCCESS 
+                            "Asynchronous 2.0 write transaction %08X initiated for %d items on group '%s'."
+    IDS_ASYNC20_WRITE_COMPLETE 
+                            "Asynchronous 2.0 write transaction %08X completed for %d items on group '%s' (HR = %08X)."
+    IDS_SERVER_REQUESTED_SHUTDOWN 
+                            "Server '%s' requested shutdown, reason '%s'."
+    IDS_SET_ACTIVE_STATE_SUCCESS 
+                            "Set active state '%d' for %d items on group '%s'."
+    IDS_SYNC_READDEVICE_SUCCESS 
+                            "Synchronous read from device succeeded for %d items on group '%s'."
+    IDS_SYNC_READCACHE_SUCCESS 
+                            "Synchronous read from cache succeeded for %d items on group '%s'."
+    IDS_ASYNC10_READDEVICE_SUCCESS 
+                            "Asynchronous 1.0 read transaction %08X from device initiated for %d items on group '%s'."
+    IDS_ASYNC10_READCACHE_SUCCESS 
+                            "Asynchronous 1.0 read transaction %08X from cache initiated for %d items on group '%s'."
+    IDS_ASYNC10_READXACT_COMPLETE 
+                            "Asynchronous 1.0 transaction %08X completed for %d items on group '%s' (HR = %08X)."
+    IDS_ASYNC10_REFRESHDEVICE_SUCCESS 
+                            "Asynchronous 1.0 refresh transaction %08X from device initiated on group '%s'."
+    IDS_ASYNC10_REFRESHCACHE_SUCCESS 
+                            "Asynchronous 1.0 refresh transaction %08X from cache initiated on group '%s'."
+    IDS_ASYNC20_REFRESHDEVICE_SUCCESS 
+                            "Asynchronous 2.0 refresh transaction %08X from device initiated on group '%s'."
+    IDS_ASYNC20_REFRESHCACHE_SUCCESS 
+                            "Asynchronous 2.0 refresh transaction %08X from cache initiated on group '%s'."
+    IDS_ASYNC20_READXACT_COMPLETE 
+                            "Asynchronous 2.0 transaction %08X completed for %d items on group '%s' (HR = %08X)."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SET_ACTIVE_STATE_FAILED 
+                            "Failed to set active state '%d' for item '%s' on group '%s' (HR = %08X)."
+    IDS_SYNC_READDEVICE_FAILED 
+                            "Failed on item '%s' synchronous read from device on group '%s' (HR = %08X)."
+    IDS_SYNC_READCACHE_FAILED 
+                            "Failed on item '%s' synchronous read from cache on group '%s' (HR = %08X)."
+    IDS_ASYNC10_READDEVICE_FAILED 
+                            "Failed to add item '%s' to an asynchronous 1.0 read transaction from device for group '%s' (HR = %08X)."
+    IDS_ASYNC10_READCACHE_FAILED 
+                            "Failed to add item '%s' to an asynchronous 1.0 read transaction from cache for group '%s' (HR = %08X)."
+    IDS_ASYNC10_REFRESHDEVICE_FAILURE 
+                            "Failed to initiate refresh transaction from device on group '%s' (HR = %08X)."
+    IDS_ASYNC10_REFRESHCACHE_FAILURE 
+                            "Failed to initiate refresh transaction from cache on group '%s' (HR = %08X)."
+    IDS_ASYNC20_REFRESHDEVICE_FAILURE 
+                            "Failed to initiate refresh transaction from device on group '%s' (HR = %08X)."
+    IDS_ASYNC20_REFRESHCACHE_FAILURE 
+                            "Failed to initiate refresh transaction from cache on group '%s' (HR = %08X)."
+    IDS_ASYNC20_READ_FAILED "Failed to add item '%s' to an asynchronous 2.0 read transaction for group '%s' (HR = %08X)."
+    IDS_CLONE_GROUP_FAILED  "Failed to clone group '%s' on server '%s' (HR = %08X)."
+    IDS_CLONE_GROUP_INVALID_INTERFACE 
+                            "Failed to clone group '%s' on server '%s', the server returned an invalid interface pointer on success."
+    IDS_WRITE_DATA_MAP_FAILED 
+                            "Unable to map write data to variant data for item '%s'."
+    IDS_UNABLETORESOLVEERRORCODE 
+                            "The server could not resolve this error code."
+    IDS_INVALIDHEXNUMBER    "Invalid hexadecmial number."
+    IDS_BADITEMARRAYDATA    "Invalid array data for item '%s'."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ASYNC20_READ_SUCCESS 
+                            "Asynchronous 2.0 read transaction %08X initiated for %d items on group '%s'."
+    IDS_CLONE_GROUP_SUCCESS "Cloned group '%s' from group '%s' (%d items) on server '%s'."
+    IDS_SET_GROUP_ACTIVE_STATE "Set active state '%d' for group '%s'."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MAJORVERSION        "Major Version:\t\t%1\r\n"
+    IDS_MINORVERSION        "Minor Version:\t\t%1\r\n"
+    IDS_BUILDNUMBER         "Build Number:\t\t%1\r\n"
+    IDS_VENDORNAME          "Vendor:\t\t\t%1\r\n"
+    IDS_UNABLE_TO_DETERMINE_STATUS "Unable to determine status"
+    IDS_RUNNING             "Running"
+    IDS_FAILED              "Failure"
+    IDS_NOCONFIG            "No Configuration"
+    IDS_SUSPENDED           "Suspended"
+    IDS_TEST                "Test"
+    IDS_VALIDATE_ITEM_FAILED "Item validation for '%1' failed (%2)."
+    IDS_VALIDATE_ITEM_FAILED_CONTINUE 
+                            "Item validation for '%1' failed (%2).  Do you want to add this item anyway?"
+    IDS_ACCESSPATH          "Access Path"
+    IDS_DATATYPE            "Êý¾ÝÀàÐÍ"
+    IDS_ACTIVE              "Active"
+    IDS_IDFIELDBUFFEROVERFLOW 
+                            "Error importing CSV item data.\n\nField buffer overflow reading identification record."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UNRECOGNIZEDFIELDNAME 
+                            "Error importing CSV item data.\n\nUnrecognized field name: '%s'"
+    IDS_DUPLICATEFIELDNAME  "Error importing CSV item data.\n\nDuplicate field name: '%s'"
+    IDS_MISSINGIDRECORD     "Error importing CSV item data.\n\nMissing item field identification record."
+    IDS_CSVFILEFILTER       "CSV Files (*.csv)|*.csv|All files (*.*)|*.*|"
+    IDS_CSVEXPORT           "Export to CSV"
+    IDS_CSVIMPORT           "Import from CSV"
+    IDS_FIELDBUFFEROVERFLOW "Error importing CSV item record %d\n\nField buffer overflow."
+    IDS_FAILED_TO_SETDATATYPE 
+                            "Failed to set the data type to '%s'.  The data type will remain unchanged."
+    IDS_UNABLETOCHECKSN     "Unable to check product serial number.  Demo mode of operation will be assumed."
+    IDS_LOADING_PROJECT     "Loading Project"
+    IDS_UNLOADING_PROJECT   "Unloading Project"
+    IDS_CONNECTING          "Connecting"
+    IDS_DISCONNECTING       "Disconnecting"
+    IDS_ADDING_ITEMS        "Adding Items"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_ENUMERATE_GROUPS "Enumerate server groups by name or object"
+    ID_TOOLS_CONNECT        "Connect to a server"
+    ID_TOOLS_DISCONNECT     "Disconnect from a server"
+    ID_VIEW_CLEAR           "Clear the event log display"
+    ID_VIEW_ERRORONLY       "Display only error messages in the event log"
+    ID_TOOLS_EXPORT_CSV     "Export item data to a .CSV file"
+    ID_TOOLS_IMPORT_CSV     "Import item data from a .CSV file"
+    ID_TOOLS_RECONNECT      "Reestablish a connection to a server"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOLS_SYNC_READ_CACHE 
+                            "Perform a synchronous read from cache on the selected items"
+    ID_TOOLS_SYNC_READ_DEVICE 
+                            "Perform a synchronous read from device on the selected items"
+    ID_TOOLS_SET_ACTIVE     "Activate selected items"
+    ID_TOOLS_SET_INACTIVE   "Inactivate selected items"
+    ID_TOOLS_ASYNC10_READ_CACHE 
+                            "Perform an asynchronous 1.0 read from cache on the selected items"
+    ID_TOOLS_ASYNC10_READ_DEVICE 
+                            "Perform an asynchronous 1.0 read from device on the selected items"
+    ID_TOOLS_ASYNC20_READ_DEVICE 
+                            "Perform an asynchronous 2.0 read on the selected items"
+    ID_TOOLS_ASYNC10_REFRESH_CACHE 
+                            "Perform an asynchronous 1.0 refresh from cache on the selected items"
+    ID_TOOLS_ASYNC10_REFRESH_DEVICE 
+                            "Perform an asynchronous 1.0 refresh from device on the selected items"
+    ID_TOOLS_ASYNC20_REFRESH_CACHE 
+                            "Perform an asynchronous 2.0 refresh from cache on the selected items"
+    ID_TOOLS_ASYNC20_REFRESH_DEVICE 
+                            "Perform an asynchronous 2.0 refresh from device on the selected items"
+    ID_TOOLS_GET_ERROR_STRING "Display server error descriptions"
+    ID_TOOLS_CLONE_GROUP    "Clone an existing group"
+    ID_TOOLS_GET_GROUP_BY_NAME "Retrieve group properties by name"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DEMO_KEPSERVEREXONLY 
+                            "This is a demo version of KEPware's OPC Quick Client.  It can only be used with KEPware's Enhanced OPC Servers."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HINTS               "_Hints"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TIMELIMITNOTIFICATION 
+                            "The OPC Quick Client will run for 2 hours before automatically shutting down."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_APP_COMPANYNAME     "FOX_wfm"
+    IDS_APP_PRODUCTNAME     "OPC¿Í»§¶Ë"
+    IDS_APP_INTERNALNAME    "OPC¿Í»§¶Ë"
+    IDS_APP_DESCRIPTION     "KEPware OPC Quick Client"
+    IDS_APP_COMMENTS        "  "
+    IDS_APP_LEGALCOPYRIGHT  "Copyright ? 2001 KEPware, Inc."
+    IDS_APP_DEFCONNECTPROGID "SCADA.OPCServer"
+END
+
+#endif    // ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ó¢Óï(ÃÀ¹ú) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,2,1,67
+ PRODUCTVERSION 4,2,1,67
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "KEPware"
+            VALUE "FileDescription", "KEPware OPC Quick Client"
+            VALUE "FileVersion", "4, 2, 1, 67"
+            VALUE "InternalName", "OPC Quick Client"
+            VALUE "LegalCopyright", "Copyright © 2001 KEPware, Inc."
+            VALUE "OriginalFilename", "opcquickclient.exe"
+            VALUE "ProductName", "OPC Quick Client"
+            VALUE "ProductVersion", "4, 2, 1, 67"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 217, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OPC Quick Client"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_APPICON,11,17,20,20
+    LTEXT           "<<Description Displayed Here>>",IDC_DESCRIPTION,41,10,119,8,SS_NOPREFIX
+    LTEXT           "<<Version Displayed Here>>",IDC_VERSION,41,22,136,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "<<Copyright Displayed Here>>",IDC_COPYRIGHT,41,34,119,8
+END
+
+IDD_SERVER_STATUS DIALOG 0, 0, 262, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Status"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Status Description",IDC_STATUS,18,17,225,126
+END
+
+IDD_SERVER_ENUMERATEGROUPS DIALOG 0, 0, 366, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enumerate Groups"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Scope:",IDC_STATIC,10,12,27,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_GROUPENUM_SCOPE,41,12,68,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Enumerate By:",IDC_STATIC,122,12,50,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_GROUPENUM_INTERFACE,177,12,68,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Enumerated &List:",IDC_STATIC,10,39,91,8
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_NOLABELWRAP | LVS_AUTOARRANGE | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,10,51,129,136
+    GROUPBOX        "Group Properties",IDC_STATIC,153,47,202,140
+    LTEXT           "Name:",IDC_STATIC,163,67,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,241,67,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Update Rate (ms.):",IDC_STATIC,163,86,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_UPDATERATE,241,86,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Time Bias (min.):",IDC_STATIC,163,104,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_TIMEBIAS,241,104,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Percent Deadband:",IDC_STATIC,163,124,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PERCENTDEADBAND,241,124,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Language ID:",IDC_STATIC,163,144,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LANGUAGEID,241,144,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_DISABLED,241,162,10,12
+    LTEXT           "Active State",IDC_STATIC,255,163,52,10
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,309,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,309,24,50,14
+END
+
+IDD_SERVER_GROUPBYNAME DIALOG 0, 0, 221, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Group By Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,10,13,46,8
+    EDITTEXT        IDC_NAME,10,25,103,12,ES_AUTOHSCROLL
+    GROUPBOX        "Group Properties",IDC_STATIC,10,50,201,114
+    LTEXT           "Update &Rate (ms.):",IDC_STATIC,19,68,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_UPDATERATE,97,68,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Time &Bias (min.):",IDC_STATIC,19,86,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_TIMEBIAS,97,86,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Percent &Deadband:",IDC_STATIC,19,106,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PERCENTDEADBAND,97,106,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "&Language ID:",IDC_STATIC,19,126,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_LANGUAGEID,97,126,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,97,144,10,12
+    LTEXT           "&Active State",IDC_STATIC,111,145,52,10
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,163,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,23,50,14
+END
+
+IDD_SERVER_GETERROR DIALOG 0, 0, 211, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Get Error String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Error Code:",IDC_STATIC,10,14,39,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ERROR_CODE,51,14,64,12,ES_AUTOHSCROLL
+    LTEXT           "Error Description:",IDC_STATIC,10,43,82,8
+    EDITTEXT        IDC_ERROR_STRING,10,55,190,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,154,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,24,50,14
+END
+
+IDD_GROUP_ENUMERATEITEMS DIALOG 0, 0, 366, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enumerate Items"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enumerated &List:",IDC_STATIC,9,10,91,8
+    LISTBOX         IDC_LIST,9,19,132,159,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Item Properties",IDC_STATIC,153,15,202,163
+    LTEXT           "Access Path:",IDC_STATIC,163,28,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ACCESSPATH,241,28,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Item ID:",IDC_STATIC,163,47,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ITEMID,241,47,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Client Handle:",IDC_STATIC,163,66,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLIENTHANDLE,241,66,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Server Handle:",IDC_STATIC,163,85,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SERVERHANDLE,241,85,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Access Rights:",IDC_STATIC,163,104,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ACCESSRIGHTS,241,104,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Requested Datatype:",IDC_STATIC,163,123,70,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_REQDATATYPE,241,123,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Canonical Datatype:",IDC_STATIC,163,142,66,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATATYPE,241,142,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,241,162,10,12
+    LTEXT           "Active State",IDC_STATIC,256,164,52,10
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,125,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,197,50,14
+END
+
+IDD_VIEW_UPDATEINTERVAL DIALOG 0, 0, 186, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View Update Interval"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Interval (ms):",IDC_STATIC,13,13,46,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_INTERVAL,59,13,39,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_GROUP_ACTIONS DIALOG 0, 0, 350, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Group Removal",IDC_STATIC,12,15,254,50
+    CONTROL         "Notify server to delete group even if references exists (force delete)",IDC_FORCE_DELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,30,229,9
+    CONTROL         "Client should remove items before removing group",IDC_REMOVEITEMS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,44,175,9
+    DEFPUSHBUTTON   "&Defaults",IDC_DEFAULT,293,7,50,14
+END
+
+IDD_ITEM_WRITE DIALOG 0, 0, 453, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Write Values"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,13,366,172
+    DEFPUSHBUTTON   "OK",IDOK,396,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,396,41,50,14
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,396,24,50,14
+END
+
+IDD_ITEM_PROPERTIES DIALOG 0, 0, 379, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Item Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,7,7,244,86
+    LTEXT           "Access &Path:",IDC_STATIC,17,21,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ACCESSPATH,65,21,149,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Item &ID:",IDC_STATIC,17,41,31,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ITEMID,65,41,149,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Data &Type:",IDC_STATIC,17,61,37,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_DATATYPE,65,61,63,209,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Active",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,16,77,58,12
+    GROUPBOX        "Advanced",IDC_STATIC,7,98,364,128
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,16,111,346,108
+    PUSHBUTTON      "Previous Item",IDC_PREVIOUS,285,14,22,16,BS_BITMAP | WS_GROUP
+    PUSHBUTTON      "Next Item",IDC_NEXT,313,14,22,16,BS_BITMAP
+    PUSHBUTTON      "OK",IDOK,285,35,50,14,WS_GROUP
+END
+
+IDD_DUPLICATE_COUNT DIALOG 0, 0, 235, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Duplicate Items"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Number of items to duplicate:",IDC_STATIC,11,11,98,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COUNT,113,11,48,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,178,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_SERVER_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_SERVER_ENUMERATEGROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SERVER_GROUPBYNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SERVER_GETERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_GROUP_ENUMERATEITEMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_VIEW_UPDATEINTERVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GROUP_ACTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_ITEM_WRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 446
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_ITEM_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_DUPLICATE_COUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERVER_ENUMERATEGROUPS DLGINIT
+BEGIN
+    IDC_GROUPENUM_SCOPE, 0x403, 15, 0
+0x7250, 0x7669, 0x7461, 0x2065, 0x7247, 0x756f, 0x7370, "\000" 
+    IDC_GROUPENUM_SCOPE, 0x403, 14, 0
+0x7550, 0x6c62, 0x6369, 0x4720, 0x6f72, 0x7075, 0x0073, 
+    IDC_GROUPENUM_SCOPE, 0x403, 11, 0
+0x6c41, 0x206c, 0x7247, 0x756f, 0x7370, "\000" 
+    IDC_GROUPENUM_INTERFACE, 0x403, 13, 0
+0x7247, 0x756f, 0x2070, 0x624f, 0x656a, 0x7463, "\000" 
+    IDC_GROUPENUM_INTERFACE, 0x403, 11, 0
+0x7247, 0x756f, 0x2070, 0x614e, 0x656d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_NEWSERVER
+    BUTTON      ID_EDIT_NEWGROUP
+    BUTTON      ID_EDIT_NEWITEM
+    BUTTON      ID_EDIT_PROPERTIES
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\toolbar.bmp"
+IDB_GROUPIMAGES         BITMAP                  "res\\groupimages.bmp"
+IDB_ITEMIMAGES          BITMAP                  "res\\itemimages.bmp"
+IDB_EVENTIMAGES         BITMAP                  "res\\eventimages.bmp"
+IDB_COMPONENTS          BITMAP                  "res\\components.bmp"
+IDB_VALIDATEITEM        BITMAP                  "res\\validateitem.bmp"
+IDB_VALIDATEITEMGRAY    BITMAP                  "res\\validateitemgray.bmp"
+IDB_NEXT                BITMAP                  "res\\next.bmp"
+IDB_NEXTGRAY            BITMAP                  "res\\nextgray.bmp"
+IDB_PREVIOUS            BITMAP                  "res\\previous.bmp"
+IDB_PREVIOUSGRAY        BITMAP                  "res\\previousgray.bmp"
+IDB_NEWITEM             BITMAP                  "res\\newitem.bmp"
+IDB_NEWITEMGRAY         BITMAP                  "res\\newitemgray.bmp"
+IDB_DELETEITEM          BITMAP                  "res\\deleteitem.bmp"
+IDB_DELETEITEMGRAY      BITMAP                  "res\\deleteitemgray.bmp"
+IDB_CHECKBOXES          BITMAP                  "res\\checkboxes.bmp"
+IDB_DUPITEM             BITMAP                  "res\\dupitem.bmp"
+IDB_DUPITEMGRAY         BITMAP                  "res\\dupitemgray.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\opctestclient.ico"
+#endif    // Ó¢Óï(ÃÀ¹ú) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{80ddc41c-8166-4505-a15d-4adf37e399ac}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d8ae5ab1-22f5-437f-b883-fe4e0d6716bd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e4b587da-f00f-4128-b7ad-bd04c4376f09}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Bitmaps">
+      <UniqueIdentifier>{e017bac7-0bfc-4bd8-95b5-c467186a953a}</UniqueIdentifier>
+      <Extensions>bmp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="advisesink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datasink20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="document.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editfilters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eventview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grouppropertysheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="groupview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imagebutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemadddlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itempropertiesdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="itemwritedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listeditctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opccomn_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opcda_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opctestclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safearray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serverenumgroupsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="servergeterrorstringdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="servergroupbynamedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serverpropertysheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shutdownsink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="smarttooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statusbartext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timestmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="updateintervaldlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="versioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="advisesink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="datasink20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="document.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="editfilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eventview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fixedsharedfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grouppropertysheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="groupview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imagebutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itemadddlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itempropertiesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itemview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="itemwritedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listeditctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opccomn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcerrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcprops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opcquality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opctestclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safearray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safelock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serverenumgroupsdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="servergeterrorstringdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="servergroupbynamedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="serverpropertysheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shutdownsink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="smarttooltip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statusbartext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timestmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="updateintervaldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="versioninfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="opctestclient.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\opctestclient.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\checkboxes.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\components.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\deleteitem.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\deleteitemgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dupitem.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\dupitemgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\eventimages.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\groupimages.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\itemimages.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\newitem.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\newitemgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\next.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\nextgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\previous.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\previousgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\toolbar.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\validateitem.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\validateitemgray.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="README.txt" />
+  </ItemGroup>
+</Project>
