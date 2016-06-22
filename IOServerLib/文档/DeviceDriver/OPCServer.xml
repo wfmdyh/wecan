@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Root>
+	<Channel Name="opcs" Type="TraChannel" UpdateTime="1">
+		<Tag Name="opc.group1.item1" ColChannel="channel1" ColDevice="g1" ColPoint="Local.$Second">
+			<Map Code="101" Value="VT_R4" />
+			<Map Code="201" Value="FALSE" />
+		</Tag>
+		<Tag Name="opc.group2.item1" ColChannel="channel1" ColDevice="g1" ColPoint="Local.testneicun" >
+			<Map Code="101" Value="VT_R4" />
+			<Map Code="201" Value="FALSE" />
+		</Tag>
+	</Channel>
+</Root>

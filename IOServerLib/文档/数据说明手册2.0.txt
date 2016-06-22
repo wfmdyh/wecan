@@ -1,0 +1,82 @@
+格式：transfer type,channel type
+transfer type:1,com 2,tcp 4,opc
+channel type:C,采集 T,转发
+C固定行：转发通道, ,1, 
+T固定行：转发源点, ,1,
+例：
+4,C
+转发通道, ,1, 
+
+
+格式：text,code,value_type,value1:value2...
+code
+101:数据类型
+201:只读
+301:寄存器
+
+value_type
+1:文本
+2:数组
+
+
+/*
+ * VARENUM usage key,
+ *
+ * * [V] - may appear in a VARIANT
+ * * [T] - may appear in a TYPEDESC
+ * * [P] - may appear in an OLE property set
+ * * [S] - may appear in a Safe Array
+ *
+ *
+ *  VT_EMPTY            [V]   [P]     nothing
+ *  VT_NULL             [V]   [P]     SQL style Null
+ *  VT_I2               [V][T][P][S]  2 byte signed int
+ *  VT_I4               [V][T][P][S]  4 byte signed int
+ *  VT_R4               [V][T][P][S]  4 byte real
+ *  VT_R8               [V][T][P][S]  8 byte real
+ *  VT_CY               [V][T][P][S]  currency
+ *  VT_DATE             [V][T][P][S]  date
+ *  VT_BSTR             [V][T][P][S]  OLE Automation string
+ *  VT_DISPATCH         [V][T]   [S]  IDispatch *
+ *  VT_ERROR            [V][T][P][S]  SCODE
+ *  VT_BOOL             [V][T][P][S]  True=-1, False=0
+ *  VT_VARIANT          [V][T][P][S]  VARIANT *
+ *  VT_UNKNOWN          [V][T]   [S]  IUnknown *
+ *  VT_DECIMAL          [V][T]   [S]  16 byte fixed point
+ *  VT_RECORD           [V]   [P][S]  user defined type
+ *  VT_I1               [V][T][P][s]  signed char
+ *  VT_UI1              [V][T][P][S]  unsigned char
+ *  VT_UI2              [V][T][P][S]  unsigned short
+ *  VT_UI4              [V][T][P][S]  unsigned long
+ *  VT_I8                  [T][P]     signed 64-bit int
+ *  VT_UI8                 [T][P]     unsigned 64-bit int
+ *  VT_INT              [V][T][P][S]  signed machine int
+ *  VT_UINT             [V][T]   [S]  unsigned machine int
+ *  VT_INT_PTR             [T]        signed machine register size width
+ *  VT_UINT_PTR            [T]        unsigned machine register size width
+ *  VT_VOID                [T]        C style void
+ *  VT_HRESULT             [T]        Standard return type
+ *  VT_PTR                 [T]        pointer type
+ *  VT_SAFEARRAY           [T]        (use VT_ARRAY in VARIANT)
+ *  VT_CARRAY              [T]        C style array
+ *  VT_USERDEFINED         [T]        user defined type
+ *  VT_LPSTR               [T][P]     null terminated string
+ *  VT_LPWSTR              [T][P]     wide null terminated string
+ *  VT_FILETIME               [P]     FILETIME
+ *  VT_BLOB                   [P]     Length prefixed bytes
+ *  VT_STREAM                 [P]     Name of the stream follows
+ *  VT_STORAGE                [P]     Name of the storage follows
+ *  VT_STREAMED_OBJECT        [P]     Stream contains an object
+ *  VT_STORED_OBJECT          [P]     Storage contains an object
+ *  VT_VERSIONED_STREAM       [P]     Stream with a GUID version
+ *  VT_BLOB_OBJECT            [P]     Blob contains an object 
+ *  VT_CF                     [P]     Clipboard format
+ *  VT_CLSID                  [P]     A Class ID
+ *  VT_VECTOR                 [P]     simple counted array
+ *  VT_ARRAY            [V]           SAFEARRAY*
+ *  VT_BYREF            [V]           void* for local use
+ *  VT_BSTR_BLOB                      Reserved for system use
+ */
+例：
+数据类型,101,2,VT_R4:VT_BOOL:VT_INT:VT_UI4
+202,2,TRUE:FALSE

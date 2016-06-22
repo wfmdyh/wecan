@@ -1,0 +1,3 @@
+C,4  //1:opc Server. 2:opc Client 4:TCP. 8:COM
+数据类型,101,2,VT_R4:VT_BOOL:VT_INT:VT_UI4
+只读,202,2,TRUE:FALSE

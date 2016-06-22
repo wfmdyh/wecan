@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Root>
+	<Project ProName="OPCTest"/>
+	<ColChannel>
+		<Channel Name="channel1" Desc="channel desc" Type="OPCClient" DllFile="D:\MyWork\IOServerLib\Release\OPCClient.dll" ConfigFile="OPCClient1.xml" />
+	</ColChannel>
+	<TraChannel>
+		<Channel Name="opcs" Desc="channel desc" Type="OPCServer" DllFile="D:\MyWork\IOServerLib\Release\OPCServer.dll" ConfigFile="OPCServer.xml" />
+	</TraChannel>
+</Root>
+

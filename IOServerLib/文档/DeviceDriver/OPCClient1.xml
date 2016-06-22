@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Root>
+	<Channel Name="channel1" Type="OPCClient" ProgID="SCADA.OPCServer.2" MachineName="" >
+		<Device Name="g1" UpdateRate="1000" >
+			<Point Name="Local.$Second" >
+				<Map Code="101" Value="VT_R4" />
+				<Map Code="201" Value="FALSE" />
+			</Point>
+			<Point Name="Local.$Year" >
+				<Map Code="101" Value="VT_R4" />
+				<Map Code="201" Value="FALSE" />
+			</Point>
+			<Point Name="Local.testneicun" >
+				<Map Code="101" Value="VT_R4" />
+				<Map Code="201" Value="FALSE" />
+			</Point>
+		</Device>
+	</Channel>
+</Root>

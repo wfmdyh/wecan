@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="DatabaseType" value="Oracle"/>
+    <add key="Oracle" value="Data Source=130WaterMeter;Persist Security Info=True;User ID=DMA;Password=123456;"/>
+    <add key="SqlServer" value="Data Source=192.168.1.130\SQLSERVER2012;Initial Catalog=DMA;Persist Security Info=True;User ID=sa;Password=Wecan;MultipleActiveResultSets=True"/>
+  </appSettings>
+</configuration>
