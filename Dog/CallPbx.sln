@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallPbx", "CallPbx\CallPbx.vcxproj", "{D82F8E44-5612-4530-BBFB-C5B2B176C6F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallPbxPS", "CallPbx\CallPbxPS.vcxproj", "{5A48F4E0-0AD8-4832-BADA-72097F431C68}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D82F8E44-5612-4530-BBFB-C5B2B176C6F2} = {D82F8E44-5612-4530-BBFB-C5B2B176C6F2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D82F8E44-5612-4530-BBFB-C5B2B176C6F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D82F8E44-5612-4530-BBFB-C5B2B176C6F2}.Debug|Win32.Build.0 = Debug|Win32
+		{D82F8E44-5612-4530-BBFB-C5B2B176C6F2}.Release|Win32.ActiveCfg = Release|Win32
+		{D82F8E44-5612-4530-BBFB-C5B2B176C6F2}.Release|Win32.Build.0 = Release|Win32
+		{5A48F4E0-0AD8-4832-BADA-72097F431C68}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A48F4E0-0AD8-4832-BADA-72097F431C68}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

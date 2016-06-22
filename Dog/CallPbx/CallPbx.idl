@@ -1,0 +1,51 @@
+// CallPbx.idl : CallPbx 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(CallPbx.tlb)和封送处理代码。
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(4FDD9F66-B679-4D1D-B9F8-21CAF97BCE76),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICPage : IDispatch{
+	[id(3)] HRESULT DisConnect(void);
+	[id(6)] HRESULT GetDogCode([out, retval] BSTR* pResult);
+	[id(7)] HRESULT GetCardCode([in] LONG ComNumber, [in] LONG Baud, [out, retval] BSTR* pResult);
+	[id(8)] HRESULT SetCardCode(LONG ComNumber, LONG Baud, BSTR Code, [out, retval] BSTR* pResult);
+};
+
+[
+	uuid(13532925-E784-48AB-A677-0FEEC24B2310),
+	version(1.0),
+]
+library CallPbxLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(10492807-046E-4ECF-A9C5-3475D639A5F9)		
+	]
+	dispinterface _ICPageEvents
+	{
+		properties:
+		methods:
+			[id(1)] void DisplayMsgOnBrowser(BSTR Msg);
+	};
+	[
+		uuid(D94F59B0-3F0F-4B57-92EA-DF7608C4BD8B),		
+		control
+	]
+	coclass CPage
+	{
+		[default] interface ICPage;
+		[default, source] dispinterface _ICPageEvents;
+	};
+};
+
